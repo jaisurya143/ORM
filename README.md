@@ -50,7 +50,8 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-![Alt text](<Screenshot 2023-10-27 222243.png>)
+![Screenshot 2023-10-27 222243](https://github.com/jaisurya143/ORM/assets/121999338/e47252cb-5e3a-4638-b393-0895d3e482c8)
+
 
 
 ## RESULT
