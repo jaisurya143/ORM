@@ -28,22 +28,21 @@ Execute Django admin and create 10 Football players
 Admin.py
 
 from django.contrib import admin
-from .models import Employee,EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin) 
+from .models import Football_Player,Football_PlayerAdmin
+admin.site.register(Football_Player,Football_PlayerAdmin)
 
 Model.py
 
 from django.db import models
 from django.contrib import admin
-class Employee(models.Model):
-    eid=models.CharField(max_length=20,help_text="Employee ID")
+class Football_Player(models.Model):
+    jessi_no=models.CharField(max_length=20,help_text="JESSI NO")
     name=models.CharField(max_length=100)
-    salary=models.IntegerField()
+    Team =models.CharField(max_length=100)
     age=models.IntegerField()
-    email=models.EmailField()
-
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
+    Matches=models.IntegerField()
+class Football_PlayerAdmin(admin.ModelAdmin):
+    list_display=('jessi_no','name','Team','age','Matches')
 
 ```
 
